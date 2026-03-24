@@ -1,9 +1,20 @@
-### IntelliJ IDEA ###
+### Maven/Spring Boot 构建相关 ###
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA 编辑器 ###
+.idea
+*.iws
+*.iml
+*.ipr
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
-### Eclipse ###
+### Eclipse & STS 编辑器 ###
 .apt_generated
 .classpath
 .factorypath
@@ -15,15 +26,18 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
-### NetBeans ###
+### NetBeans 编辑器 ###
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-### VS Code ###
+### VS Code 编辑器 ###
 .vscode/
 
-### Mac OS ###
+### Mac OS 系统文件 ###
 .DS_Store
