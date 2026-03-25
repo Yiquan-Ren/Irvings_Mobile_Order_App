@@ -7,5 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class IrvingsApplication {
     public static void main(String[] args) {
         SpringApplication.run(IrvingsApplication.class, args);
+        System.out.println("=======================================");
+        System.out.println("Irving's Order App API 启动成功！");
+        System.out.println("API 地址: http://localhost:8080/api");
+        System.out.println("=======================================");
     }
 }

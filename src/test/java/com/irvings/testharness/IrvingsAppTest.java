@@ -1,18 +1,34 @@
-package testharness;
+package com.irvings.testharness;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
-import user.*;
-import menu.*;
-import order.*;
-import payment.*;
-import pickup.*;
-import kitchen.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import org.junit.jupiter.api.Test;
+
+import com.irvings.kitchen.KitchenMobileSync;
+import com.irvings.kitchen.KitchenOrder;
+import com.irvings.menu.CustomizationOption;
+import com.irvings.menu.MenuItem;
+import com.irvings.order.Cart;
+import com.irvings.order.ItemUnavailableException;
+import com.irvings.order.Order;
+import com.irvings.order.OrderAlreadyInProgressException;
+import com.irvings.order.OrderDetails;
+import com.irvings.payment.PaymentProcessing;
+import com.irvings.payment.PaymentReceipt;
+import com.irvings.pickup.PickupQueue;
+import com.irvings.pickup.PickupReceipt;
+import com.irvings.pickup.PickupStatus;
+import com.irvings.user.AuthenticationService;
+import com.irvings.user.CustomerAccount;
 
 public class IrvingsAppTest {
 

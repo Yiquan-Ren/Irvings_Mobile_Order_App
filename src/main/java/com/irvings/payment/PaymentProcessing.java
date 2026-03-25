@@ -3,6 +3,10 @@ package com.irvings.payment;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Service;
+
+@Service
+
 public class PaymentProcessing {
     private String gateway = "StubGateway";
     private Map<String, String> transactions = new HashMap<>(); // orderId -> transactionId

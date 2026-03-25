@@ -2,6 +2,10 @@ package com.irvings.pickup;
 
 import java.util.*;
 
+import org.springframework.stereotype.Service;
+
+@Service
+
 public class PickupQueue {
     private final Map<String, PickupStatus> statusByOrder = new HashMap<>();
     private final Deque<String> queue = new ArrayDeque<>();

@@ -3,6 +3,10 @@ package com.irvings.order;
 import java.util.*;
 import java.util.function.Consumer;
 
+import org.springframework.stereotype.Service;
+
+@Service
+
 public class OrderStatus {
 
     private final Map<String, String> statusByOrderId = new HashMap<>();
