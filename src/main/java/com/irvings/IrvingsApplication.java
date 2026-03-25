@@ -9,7 +9,7 @@ public class IrvingsApplication {
         SpringApplication.run(IrvingsApplication.class, args);
         System.out.println("=======================================");
         System.out.println("Irving's Order App API 启动成功！");
-        System.out.println("API 地址: http://localhost:8080/h2-console");
+        System.out.println("API 地址: http://localhost:8080/api");
         System.out.println("=======================================");
     }
 }
