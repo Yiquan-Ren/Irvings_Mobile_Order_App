@@ -13,8 +13,11 @@ import java.util.Map;
 
 import org.junit.jupiter.api.Test;
 
-import com.irvings.kitchen.KitchenMobileSync;
-import com.irvings.kitchen.KitchenOrder;
+// original kitchen flow use these (before refactor)
+//import com.irvings.kitchen.KitchenMobileSync;
+//import com.irvings.kitchen.KitchenOrder;
+import com.irvings.testharness.TestKitchenAdapter.KitchenOrder;
+import com.irvings.testharness.TestKitchenAdapter.KitchenMobileSync;
 import com.irvings.menu.CustomizationOption;
 import com.irvings.menu.MenuItem;
 import com.irvings.order.Cart;
