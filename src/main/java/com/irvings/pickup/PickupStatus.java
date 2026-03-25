@@ -1,4 +1,4 @@
-package pickup;
+package com.irvings.pickup;
 
 public enum PickupStatus {
     IN_QUEUE,

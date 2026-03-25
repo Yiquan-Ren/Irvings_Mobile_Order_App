@@ -1,4 +1,4 @@
-package menu;
+package com.irvings.menu;
 
 import java.util.ArrayList;
 import java.util.Collections;

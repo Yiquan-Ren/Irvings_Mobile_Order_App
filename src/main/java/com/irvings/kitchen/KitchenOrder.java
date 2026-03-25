@@ -1,4 +1,4 @@
-package kitchen;
+package com.irvings.kitchen;
 
 import java.util.HashMap;
 import java.util.Map;

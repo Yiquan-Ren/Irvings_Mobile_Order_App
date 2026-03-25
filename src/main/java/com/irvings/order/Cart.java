@@ -1,6 +1,6 @@
-package order;
+package com.irvings.order;
 
-import menu.MenuItem;
+import com.irvings.menu.MenuItem;
 import java.util.*;
 
 public class Cart {

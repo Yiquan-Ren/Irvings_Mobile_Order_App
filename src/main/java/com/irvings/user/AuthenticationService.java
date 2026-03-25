@@ -1,4 +1,4 @@
-package user;
+package com.irvings.user;
 
 import java.util.HashMap;
 import java.util.Map;

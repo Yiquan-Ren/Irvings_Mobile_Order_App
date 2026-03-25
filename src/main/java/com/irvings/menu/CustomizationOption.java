@@ -1,4 +1,4 @@
-package menu;
+package com.irvings.menu;
 
 public class CustomizationOption {
     private final String optionId;

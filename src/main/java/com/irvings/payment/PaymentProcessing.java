@@ -1,4 +1,4 @@
-package payment;
+package com.irvings.payment;
 
 import java.util.HashMap;
 import java.util.Map;

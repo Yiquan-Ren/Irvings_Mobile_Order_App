@@ -1,4 +1,4 @@
-package kitchen;
+package com.irvings.kitchen;
 
 import java.time.LocalDateTime;
 import java.util.HashMap;
