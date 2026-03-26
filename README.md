@@ -31,23 +31,24 @@ IRVINGS_MOBILE_ORDER_APP/
 ├── src/
 │   ├── main/
 │   │   ├── java/com/irvings/
-│   │   │   ├── IrvingsApplication.java       # Spring Boot Main Application Entry
-│   │   │   ├── config/                        # Configuration (CORS, etc.)
-│   │   │   ├── controller/                    # REST API Layer
-│   │   │   ├── exception/                     # Global Exception Handler
-│   │   │   ├── user/                          # User Module (OOD Domain Model)
-│   │   │   ├── menu/                          # Menu Module (OOD Domain Model)
-│   │   │   ├── order/                         # Order Module (OOD Domain Model)
-│   │   │   ├── payment/                       # Payment Module (OOD Domain Model)
-│   │   │   ├── pickup/                        # Pickup Module (OOD Domain Model)
-│   │   │   └── kitchen/                       # Kitchen Module (OOD Domain Model)
+│   │   │   ├── IrvingsApplication.java         # Spring Boot Main Application Entry
+│   │   │   ├── config/                         # Configuration (CORS, etc.)
+│   │   │   ├── controller/                     # REST API Layer
+│   │   │   ├── exception/                      # Global Exception Handler
+│   │   │   ├── user/                           # User Module (OOD Domain Model)
+│   │   │   ├── menu/                           # Menu Module (OOD Domain Model)
+│   │   │   ├── order/                          # Order Module (OOD Domain Model)
+│   │   │   ├── payment/                        # Payment Module (OOD Domain Model)
+│   │   │   ├── pickup/                         # Pickup Module (OOD Domain Model)
+│   │   │   └── kitchen/                        # Kitchen Module (OOD Domain Model)
 │   │   └── resources/
-│   │       ├── application.properties         # Spring Boot Configuration
-│   │       ├── schema.sql                     # Database Schema Definition (Optional)
-│   │       └── data.sql                       # Test Data Initialization (Optional)
+│   │   │   ├── application.properties          # Spring Boot Configuration
+│   │   │   ├── schema.sql                      # Database Schema Definition (Optional)
+│   │   │   └── data.sql                        # Test Data Initialization (Optional)
+│   │   └── README.md                           # Backend Development Documentation
 │   └── test/
 │       └── java/com/irvings/
-│           └── testharness/                   # JUnit 5 Integration Test Suite
+│           └── testharness/                    # JUnit 5 Integration Test Suite
 ├── frontend/                                   # Frontend Source Code
 │   ├── index.html                              # App Entry Page
 │   ├── css/                                    # Stylesheets
@@ -135,6 +136,7 @@ IRVINGS_MOBILE_ORDER_APP/
 
 ## Related Resources
 - Frontend Development Docs: [frontend/README.md](frontend/README.md)
+- Backend Development Docs: [src/main/README.md](src/main/README.md)
 - Spring Boot Official Docs: https://spring.io/projects/spring-boot
 - H2 Database Official Docs: https://www.h2database.com
 - Supabase Official Docs: https://supabase.com/docs
