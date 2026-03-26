@@ -26,36 +26,37 @@ This project implements a complete bagel shop mobile ordering workflow for Irvin
 - **Coverage**: End-to-end user flow integration tests
 
 ## Project Structure
+```tree
 IRVINGS_MOBILE_ORDER_APP/
 ├── src/
-│ ├── main/
-│ │ ├── java/com/irvings/
-│ │ │ ├── IrvingsApplication.java # Spring Boot Main Application Entry
-│ │ │ ├── config/ # Configuration (CORS, etc.)
-│ │ │ ├── controller/ # REST API Layer
-│ │ │ ├── exception/ # Global Exception Handler
-│ │ │ ├── user/ # User Module (OOD Domain Model)
-│ │ │ ├── menu/ # Menu Module (OOD Domain Model)
-│ │ │ ├── order/ # Order Module (OOD Domain Model)
-│ │ │ ├── payment/ # Payment Module (OOD Domain Model)
-│ │ │ ├── pickup/ # Pickup Module (OOD Domain Model)
-│ │ │ └── kitchen/ # Kitchen Module (OOD Domain Model)
-│ │ └── resources/
-│ │ ├── application.properties # Spring Boot Configuration
-│ │ ├── schema.sql # Database Schema Definition (Optional)
-│ │ └── data.sql # Test Data Initialization (Optional)
-│ └── test/
-│ └── java/com/irvings/
-│ └── testharness/ # JUnit 5 Integration Test Suite
-├── frontend/ # Frontend Source Code
-│ ├── index.html # App Entry Page
-│ ├── css/ # Stylesheets
-│ ├── js/ # JavaScript Logic
-│ ├── assets/ # Static Assets (Images, Icons)
-│ └── README.md # Frontend Development Documentation
-├── pom.xml # Maven Project Configuration
-└── README.md # This Document
-
+│   ├── main/
+│   │   ├── java/com/irvings/
+│   │   │   ├── IrvingsApplication.java       # Spring Boot Main Application Entry
+│   │   │   ├── config/                        # Configuration (CORS, etc.)
+│   │   │   ├── controller/                    # REST API Layer
+│   │   │   ├── exception/                     # Global Exception Handler
+│   │   │   ├── user/                          # User Module (OOD Domain Model)
+│   │   │   ├── menu/                          # Menu Module (OOD Domain Model)
+│   │   │   ├── order/                         # Order Module (OOD Domain Model)
+│   │   │   ├── payment/                       # Payment Module (OOD Domain Model)
+│   │   │   ├── pickup/                        # Pickup Module (OOD Domain Model)
+│   │   │   └── kitchen/                       # Kitchen Module (OOD Domain Model)
+│   │   └── resources/
+│   │       ├── application.properties         # Spring Boot Configuration
+│   │       ├── schema.sql                     # Database Schema Definition (Optional)
+│   │       └── data.sql                       # Test Data Initialization (Optional)
+│   └── test/
+│       └── java/com/irvings/
+│           └── testharness/                   # JUnit 5 Integration Test Suite
+├── frontend/                                   # Frontend Source Code
+│   ├── index.html                              # App Entry Page
+│   ├── css/                                    # Stylesheets
+│   ├── js/                                     # JavaScript Logic
+│   ├── assets/                                 # Static Assets (Images, Icons)
+│   └── README.md                               # Frontend Development Documentation
+├── pom.xml                                     # Maven Project Configuration
+└── README.md                                   # This Document
+```
 
 ## Quick Start
 ### Prerequisites
