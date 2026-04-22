@@ -11,8 +11,30 @@ All custom exceptions are centrally handled in `com.irvings.exception.GlobalExce
 ### CORS Configuration
 Cross-Origin Resource Sharing (CORS) is configured in `com.irvings.config.CorsConfig`. The current configuration allows all origins for development purposes. For production deployment, replace the wildcard with your specific frontend origin URL.
 
+## Quick Start
+### Prerequisites
+- JDK 17 or higher
+- Visual Studio Code (VS Code)
+- Required VS Code Extensions: Extension Pack for Java, Live Server
+
+### 1. Start the Backend
+1.  Open the project root directory in VS Code
+2.  Navigate to `src/main/java/com/irvings/IrvingsApplication.java`
+3.  Click the ▶️ Run button on the left side of the class definition
+4.  Confirm successful startup when you see `Irving's Order App API started successfully!` in the console
+5.  Backend API Base URL: `http://localhost:8080/api`
+
+### 2. Access the H2 Database Console (Development Environment)
+1.  Ensure the backend is running
+2.  Open your browser and go to: `http://localhost:8080/h2-console`
+3.  Enter the following connection details:
+    - **JDBC URL**: `jdbc:h2:mem:irvingsdb`
+    - **User Name**: `sa`
+    - **Password**: (leave blank)
+4.  Click **Connect** to view database tables and test data
+
 ## Database Migration Guide
-### Switch from H2 to Supabase PostgreSQL
+### Switch from H2 to Supabase Like PostgreSQL
 This guide walks you through migrating from the local H2 in-memory database to a cloud-hosted Supabase PostgreSQL database. This migration preserves your existing codebase, requires minimal changes to your business logic, and enables shared team access to persistent data.
 
 #### Prerequisites

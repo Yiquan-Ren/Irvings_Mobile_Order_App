@@ -1,8 +1,13 @@
 package com.irvings.order;
 
 import com.irvings.menu.MenuItem;
+import com.irvings.menu.MenuService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 import java.util.*;
 
+@Component
 public class Cart {
 
     // Registry so Order.createFromCart(cartId, ...) can find the cart (stub integration)
@@ -10,6 +15,9 @@ public class Cart {
 
     private final String cartId;
     private final Map<String, CartItem> itemsById = new LinkedHashMap<>();
+
+    @Autowired
+    private MenuService menuService;
 
     public Cart() {
         this.cartId = "CART-" + UUID.randomUUID().toString().substring(0, 8).toUpperCase();
@@ -35,6 +43,9 @@ public class Cart {
 
         if (quantity <= 0) quantity = 1;
 
+        // ==============================================
+        // 核心修改：从 MenuService 读取菜单，而不是从 Stub
+        // ==============================================
         MenuItem mi = findMenuItem(itemId);
         if (mi == null) {
             throw new ItemUnavailableException("ItemId not found: " + itemId);
@@ -91,6 +102,14 @@ public class Cart {
 
     // --- Internal helpers (stub logic) ---
     private MenuItem findMenuItem(String itemId) {
+        // 优先从 MenuService（数据库）读取
+        if (menuService != null) {
+            Optional<MenuItem> item = menuService.getMenuItemById(itemId);
+            if (item.isPresent()) {
+                return item.get();
+            }
+        }
+        // 后备：从原来的 Stub 读取（兼容现有测试）
         for (MenuItem mi : MenuItem.getStubMenu()) {
             if (mi.getItemId().equals(itemId)) return mi;
         }
@@ -114,6 +133,10 @@ public class Cart {
             }
         }
         return delta;
+    }
+
+    public Map<String, CartItem> getItemsById() {
+        return Collections.unmodifiableMap(itemsById);
     }
 }
 
